@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://thumbs.dreamstime.com/b/vis%C3%A3o-de-fundo-do-campo-futebol-grama-verde-wallpaper-para-trabalho-e-design-171757993.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#bola {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 10%;
+  animation: 2s animationBall infinite;
+}
+#gol {
+  width: 250px;
+  height: 150px;
+  position: absolute;
+  top: 5%;
+}
+
+#gol img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes animationBall {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
